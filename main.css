@@ -1,0 +1,559 @@
+@media screen {
+
+/*GENERAL*/
+* { /*insert *{} to highlight all css elements*/
+  margin:0;
+  /*background-color:#F9F9F9,0;*/
+  /*border: 1px solid green;*/
+  /*hamburger menu idea: https://codepen.io/erikterwan/pen/EVzeRP*/
+  }
+/*.topographic {
+  /*background-image:url(imgs/topographical-map-page.svg);
+  min-height:100vh;
+  background-repeat:no-repeat;
+  background-color:#fffdfb; /*blue light friendly white background*/
+  /*background-color:rgb(242,245,247); this doesn't work, figure out why.*/
+}
+.body {
+  font-family:'lato',sans-serif;
+  padding-top:32px;
+  padding-right:32px;
+  padding-bottom:32px;
+  padding-left:32px;
+  max-width:800px;
+  margin: 0 auto;
+}
+.header-bar {
+  position:fixed;
+  top:0;
+  z-index:1;
+  width:100%;
+}
+/* The progress container (grey background) */
+.progress-container {
+  width:100%;
+  height:4px;
+  background: rgb(0,0,0,0);
+}
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height:4px;
+  background:lightgrey;
+  width:0%;
+}
+header {
+  padding-bottom: 5em;
+}
+.header-line {
+  padding:25px 0 1em 0;
+  border-bottom: 1px solid rgb(38,52,74,.15);
+  transition: background .2s ease-out;
+  background-repeat:no-repeat;
+}
+div.header-line a, span {
+  /*global nav:*/
+  color:rgb(38,52,74,.4);
+  font-weight:600;
+  text-decoration:none;
+  cursor:pointer;
+  /*hover-border:*/
+  border-radius:4px;
+  padding:3px 5px 5px 5px;
+  margin-right:10px;
+}
+div.header-line a:hover {
+  color:rgb(38,52,74,.6);
+  background-color:rgb(38,52,74,.08);
+  transition: all 300ms ease 0s;
+}
+.header-line a:nth-child(1) {opacity:.65;}
+.header-line a:hover:nth-child(1) {background-color:transparent; opacity:1;}
+.about-me, .vohkab, .work, .contact-me {float:right;}
+/*.header-line a:nth-child(2) {float:right; margin-right:5;}
+.header-line a:nth-child(3) {float:right;}
+.header-line a:nth-child(4) {float:right;}
+.header-line a:nth-child(5) {float:right;}*/
+.header-logo-link {
+  color:rgb(4,15,26,.4);
+}
+.mobile-hamburger {
+  display:none;
+}
+.header-logo-link:hover {
+  opacity:1;
+  text-decoration:none;
+}
+.head {
+  display:flex;
+  margin-bottom:32px;
+}
+#myImg {
+  display:inline-block;
+  /*box-shadow: rgba(0, 0, 0, 0.37) 0px 1px 4px 0px;
+  border-radius:50%;*/
+  align-self:center;
+}
+#myName {
+  color: rgb(51,51,51);
+  font-weight:800;
+  font-size:3em;
+  padding-top:22px;
+  margin-left:25px;
+}
+.header {
+  color: rgb(51,51,51);
+  font-weight:600;
+  font-size:2em;
+  margin-bottom:24px;
+}
+.text {
+  color: rgb(51,51,51);
+  font-weight:normal;
+  font-size:1.5em;
+  line-height:1.4em;
+}
+.subtext {
+  color: rgb(135,134,130);
+  font-weight:normal;
+  font-size:1em;
+  line-height:1.4em;
+}
+/*.linkedin {
+  background-color:rgb(4,15,26,.4);
+  font-weight:bold;
+  display:inline-block;
+  cursor:pointer;
+  color:rgb(255, 255, 255);
+  margin: 16px 4px 16px 0px;
+  padding:5px 6px 6px 6px;
+  border-radius:4px;
+  transition: all 300ms ease 0s;
+  text-decoration:none;
+}
+.linkedin:hover {
+  background-color:rgb(40,103,178);
+}
+.instagram {
+  background-color:rgb(4,15,26,.4);
+  /*background:linear-gradient(90deg, rgb(138,58,185) 17%, rgb(233,89,80) 34%, rgb(251,173,80) 51%, rgb(205,72,107) 68%, rgb(76,104,215) 95%); /*Explanation: https://stackoverflow.com/questions/8541081/css-set-a-background-color-which-is-50-of-the-width-of-the-window*//*
+  font-weight:bold;
+  display:inline-block;
+  cursor:pointer;
+  color:rgb(255, 255, 255);
+  margin: 16px 4px 16px 0px;
+  padding:5px 6px 6px 6px;
+  border-radius:4px;
+  transition: all 300ms ease 0s;
+  text-decoration:none;
+}
+.instagram:hover {
+  background-color:rgb(205,72,107);
+}
+.behance {
+  background-color:rgb(4,15,26,.4);
+  font-weight:bold;
+  display:inline-block;
+  cursor:pointer;
+  color:rgb(255, 255, 255);
+  margin: 16px 4px 16px 0px;
+  padding:5px 6px 6px 6px;
+  border-radius:4px;
+  transition: all 300ms ease 0s;
+  text-decoration:none;
+}
+.behance:hover {
+  background-color:rgb(5,62,255);
+}
+.spotify {
+  background-color:rgb(4,15,26,.4);
+  font-weight:bold;
+  display:inline-block;
+  cursor:pointer;
+  color:rgb(255, 255, 255);
+  margin: 16px 4px 16px 0px;
+  padding:5px 6px 6px 6px;
+  border-radius:4px;
+  transition: all 300ms ease 0s;
+  text-decoration:none;
+}
+.spotify:hover {
+  background-color:rgb(30,215,96);
+}
+.email {
+  background-color:rgb(4,15,26,.4);
+  font-weight:bold;
+  display:inline-block;
+  cursor:pointer;
+  color:rgb(255, 255, 255);
+  margin: 16px 4px 16px 0px;
+  padding:5px 6px 6px 6px;
+  border-radius:4px;
+  transition: all 300ms ease 0s;
+  text-decoration:none;
+}
+.email:hover {
+  background-color:rgb(255,183,0);
+}*/
+.tools {
+  line-height:1.4em;
+  margin: 40px 0 20px 0;
+}
+.favorite-tools-desktop {
+  display:flex;
+  padding: 0 22px 0 22px;
+  justify-content:space-between;
+  margin: 0 20px 0 20px;
+}
+.ftd1 {
+  padding:10px 22px 25px 22px;
+}
+.favorite-tools-mobile {
+  display:none;
+}
+.things3 {
+  background-image:url(imgs/things3-favoritetools-icons-2x-min.png);
+  background-position: 0px -58px;
+  opacity:.5;
+  width:105px;
+  height:33px;
+  background-size: 175px 175px;
+  overflow:hidden;
+  cursor:pointer;
+  align-self:center;
+  background-repeat:no-repeat;
+}
+.things3:hover {
+  background-position: 0px 0px;
+  opacity:1;
+}
+.notion {
+  background-image:url(imgs/notion-favoritetools-icons-2x-min.png);
+  background-position: 0px -49px;
+  opacity:.5;
+  width:105px;
+  height:40px;
+  background-size: 175px 175px;
+  overflow:hidden;
+  cursor:pointer;
+  align-self:center;
+  background-repeat:no-repeat;
+}
+.notion:hover {
+  background-position: 0px 0px;
+  opacity:1;
+}
+.newton {
+  background-image:url(imgs/newton-alternateplanes-favoritetools-icons-2x-min.png);
+  background-position: 0px -44px;
+  opacity:.5;
+  width:105px;
+  height:34px;
+  background-size: 175px 175px;
+  overflow:hidden;
+  cursor:pointer;
+  align-self:center;
+  background-repeat:no-repeat;
+}
+.newton:hover {
+  background-position: 0px 0px;
+  opacity:1;
+}
+.adobe {
+  background-image:url(imgs/adobe-favoritetools-icons-2x-min.png);
+  background-position: 0px -56px;
+  opacity:.5;
+  width:105px;
+  height:34px;
+  background-size: 175px 175px;
+  overflow:hidden;
+  cursor:pointer;
+  align-self:center;
+  background-repeat:no-repeat;
+}
+.adobe:hover {
+  background-position: 0px 0px;
+  opacity:1;
+}
+.trello {
+  background-image:url(imgs/trello-favoritetools-icons-2x-min.png);
+  background-position: 0px -49px;
+  opacity:.5;
+  width:105px;
+  height:35px;
+  background-size: 175px 175px;
+  overflow:hidden;
+  cursor:pointer;
+  align-self:center;
+  background-repeat:no-repeat;
+}
+.trello:hover {
+  background-position: 0px 0px;
+  opacity:1;
+}
+.miro {
+  background-image:url(imgs/miro-favoritetools-icons-2x-min.png);
+  background-position: 0px -49px;
+  opacity:.5;
+  width:105px;
+  height:35px;
+  background-size: 175px 175px;
+  overflow:hidden;
+  cursor:pointer;
+  align-self:center;
+  background-repeat:no-repeat;
+}
+.miro:hover {
+  background-position: 0px 0px;
+  opacity:1;
+}
+.sketch {
+  background-image:url(imgs/sketch-favoritetools-icons-2x-min.png);
+  background-position: 0px -49px;
+  opacity:.5;
+  width:105px;
+  height:34px;
+  background-size: 175px 175px;
+  overflow:hidden;
+  cursor:pointer;
+  align-self:center;
+  background-repeat:no-repeat;
+}
+.sketch:hover {
+  background-position: 0px 0px;
+  opacity:1;
+}
+.figma {
+  background-image:url(imgs/figma-favoritetools-icons-2x-min.png);
+  background-position: 0px -49px;
+  opacity:.5;
+  width:105px;
+  height:46px;
+  background-size: 175px 175px;
+  overflow:hidden;
+  cursor:pointer;
+  align-self:center;
+  background-repeat:no-repeat;
+}
+.figma:hover {
+  background-position: 0px 0px;
+  opacity:1;
+}
+.footer-line {
+  padding-top:40px;
+  border-top: 1px solid rgba(0,0,0,.1);
+  text-align:center;
+  font-size: 0.8em;
+  color:rgba(4,15,26,.4);
+}
+.social-head {
+  font-family:-apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+  font-size:14px;
+  color:rgba(4,15,26,.4);
+  font-weight:700;
+  margin: 20px 0 5px 0;
+}
+.foot-social {
+  display:flex;
+  align-self:center;
+  text-align:center;
+  justify-content:space-around;
+  width:75%;
+  margin: 25px auto 0 auto;
+}
+.foot-social a {
+  font-family:-apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
+  font-size:0.8em;
+  color:rgb(38,52,74,.4);
+  font-weight:bold;
+  cursor:pointer;
+  text-decoration:none;
+  border-radius:4px;
+  padding:3px 5px 3px 5px;
+  /*display:grid;*/
+  /*width:65px; /*when ready to make double or tripple flex column responsive—like My Toolkit—remove this width attribute and use code from My Toolkit*/
+}
+.social-linkedin:hover {
+  color:rgb(40,103,178);
+}
+.social-behance:hover {
+  color:rgb(5,62,255);
+}
+.social-instagram:hover {
+  color:rgb(205,72,107);
+}
+.social-spotify:hover {
+  color:rgb(30,215,96);
+}
+.social-linkedin:active {
+  color:rgb(40,103,178);
+  background-color:rgb(40,103,178,.08);
+  transition: all 100ms ease 0s;
+}
+.social-behance:active {
+  color:rgb(5,62,255);
+  background-color:rgb(5,62,255,.08);
+  transition: all 100ms ease 0s;
+}
+.social-instagram:active {
+  color:rgb(205,72,107);
+  background-color:rgb(205,72,107,.08);
+  transition: all 100ms ease 0s;
+}
+.social-spotify:active {
+  color:rgb(30,215,96);
+  background-color:rgb(30,215,96,.08);
+  transition: all 100ms ease 0s;
+}
+.foot {
+  font-family:'lato',sans-serif;
+  padding-top:30px;
+  padding-right:32px;
+  padding-left:32px;
+  max-width:800px;
+  margin: 0 auto;
+  text-align:center;
+  font-weight:bold;
+  text-decoration:none;
+}
+.foot-hover {
+  opacity:.5;
+  color:rgb(4,15,26,.4);
+}
+.foot-hover:hover {
+  opacity:1;
+  /*color:rgb(92 156 245);*/
+  text-decoration:none;
+}
+footer {
+  margin: 2em 0 3em 0;
+}
+} /*END @MEDIA SCREEN*/
+@media (min-width:600px) {
+  #myName {
+    margin-left:32px;
+  }
+} /*END @MEDIA SCREEN (MIN-WIDTH:600PX)*/
+@media (max-width:600px) {
+  .about-me, .vohkab, .work, .contact-me {
+    display:none;
+  }
+  /*HAMBURGER PLACEMENT*/
+  .mobile-hamburger {
+    display:initial;
+  }
+  .hamburger {
+    float:right;
+    cursor:pointer;
+    margin-right: 5px;
+    font-size:1.5em;
+    color:rgb(0,0,0,.45);
+  }
+  /*OVERLAY*/
+  .overlay {
+    height: 100%;
+    width: 100%;
+    display:none;
+    position: fixed; /*Stay in place*/
+    z-index: 1; /*Sit on top*/
+    left: 0;
+    top: 0;
+    background-color: rgb(244,244,244);
+    overflow-x: hidden; /* Disable horizontal scroll */
+  }
+  /*POSITION INSIDE OVERLAY*/
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  /*LINKS INSIDE OVERLAY*/
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  /*LINK HOVER COLOR*/
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  /*CLOSE BUTTON POSITION*/
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  .head {
+    flex-direction:column;
+    justify-content:center;
+  }
+  .myImg {
+    margin-bottom:16px;
+  }
+  #myName {
+    font-size:2.8em;
+    align-self:center;
+    margin-left:0;
+  }
+  .header {
+    font-size:1.8em;
+  }
+  .text {
+    font-size:1.4em;
+  }
+  .footer-line {
+    font-size:1em;
+  }
+  .foot-social a {
+    font-size:1em;
+    width:90%;
+  }
+  .favorite-tools-desktop {
+    flex-direction:column;
+    justify-content:center;
+    padding-top:1em;
+    display:none; /*kept above content in case I want to go back to one column*/
+  }
+  .favorite-tools-mobile a {
+    /*display:none;*/
+  }
+  .things3, .notion, .newton, .adobe, .trello, .miro, .sketch, .figma {
+    margin-bottom:25px;
+    background-position: 0px 0px;
+    opacity:.8;
+  }
+  .favorite-tools-mobile {
+    display:flex;
+    flex-direction:column;
+  }
+  .favorite-column {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+  }
+  .things3, .newton, .sketch, .trello {
+    margin-right:50px;
+  }
+  /*.favorite-column a:nth-child(1) {margin-right:50px;}*/
+} /*END @MEDIA SCREEN (MAX-WIDTH:600PX*/
+@media (max-width:500px) {
+  #myName {
+    font-size:2.8em;
+    text-align:center;
+    margin-left:0;
+  }
+  .header {
+    font-size:1.8em;
+  }
+  .text {
+    font-size:1.4em;
+  }
+  .footer-line {
+    font-size:1em;
+  }
+} /*END @MEDIA SCREEN (MAX-WIDTH:500PX)*/

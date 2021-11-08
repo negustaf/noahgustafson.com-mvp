@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- TITLE & META -->
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- code for mobile screen functionality with @media properties -->
+		<title>PareHealth</title>
+		<!-- CSS STYLESHEETS -->
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" href="loading/loading.css">
+		<link rel="stylesheet" href="loading/loading-skeleton.css">
+		<!-- FAVICON -->
+		<link rel="icon" href="http://paremed.com/imgs/favicon-home.png">
+		<!-- JAVASCRIPT -->
+		<script>
+			//automatically scroll to top:
+			//window.onbeforeunload = function () {
+			//	window.scrollTo(0, 0);
+			//}
+			// HAMBURGER MENU
+			// Open Menu
+			function openNav() {
+				document.getElementById("myNav").style.display = "block";
+			}
+			// Close Menu
+			function closeNav() {
+				document.getElementById("myNav").style.display = "none";
+			}
+			// SCROLL INDICATOR
+			// When the user scrolls the page, execute myFunction for scroll animation
+			window.onscroll = function() {myFunction()};
+			function myFunction() {
+	  		var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+	  		var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	  		var scrolled = (winScroll / height) * 100;
+	  		document.getElementById("myBar").style.width = scrolled + "%";
+			}
+		</script>
+	</head>
+	<body class="topographic"> <!-- <body> == all visible content -->
+		<!-- SPLASH SCREEN -->
+		<div id='loader-main' class='loader'>
+			<div class="timeline-wrapper">
+				<div class="timeline-item">
+					<div class="animated-background">
+						 <div class="background-masker header-top"></div>
+						 <div class="background-masker header-left"></div>
+						 <div class="background-masker header-right"></div>
+						 <div class="background-masker header-bottom"></div>
+						 <div class="background-masker subheader-left"></div>
+						 <div class="background-masker subheader-right"></div>
+						 <div class="background-masker subheader-bottom"></div>
+						 <div class="background-masker content-top"></div>
+						 <div class="background-masker content-first-end"></div>
+						 <div class="background-masker content-second-line"></div>
+						 <div class="background-masker content-second-end"></div>
+						 <div class="background-masker content-third-line"></div>
+						 <div class="background-masker content-third-end"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- SCROLL INDICATOR -->
+		<div class="header-bar">
+  		<div class="progress-container">
+    		<div class="progress-bar" id="myBar"></div>
+  		</div>
+		</div>
+		<div id='skeleton' class="body">
+			<header>
+				<div class="header-line">
+					<a class="header-logo-link" href="#"><img id="header-logo-img" src="imgs/HipNoahSilhouette.png" height="30px" width="30px" style="vertical-align:middle;"></a>
+					<!--<a class="contact-me" href="/">Standing Invite</a>
+					<a class="work" href="/">Articles</a>-->
+					<!--<a class="vohkab" href="/">Vohkab</a>-->
+					<a class="contact-me" href="mailto:negustaf@umich.edu">Email Me</a>
+					<a class="about-me" href="https://www.behance.net/thedesignofnegus">Projects</a>
+					<div class="mobile-hamburger">
+						<!-- The overlay -->
+						<div id="myNav" class="overlay">
+							<!-- Button to close the overlay navigation -->
+							<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+							<!-- Overlay content -->
+							<div class="overlay-content">
+								<a href="#">projects</a>
+								<a href="mailto:negustaf@umich.edu">Email Me</a>
+								<!--<a href="#">vohkab</a>-->
+								<!--<a href="#">articles</a>
+								<a href="#">standing invite</a>-->
+							</div>
+						</div>
+						<!-- Use any element to open/show the overlay navigation menu -->
+						<span onclick="openNav()" class="hamburger">&#9776;</span>
+					</div>
+				</div>
+			</header>
+			<!-- SPLASH SPINNER -->
+			<!--
+			<div id = "loader-main" class="loader">
+      	<img src='loading/loading-desktop.png' class='load-img-desktop' alt='loading...'>
+				<img src='loading/loading-mobile.png' class='load-img-mobile' alt='loading...'>
+    	</div>
+			-->
+			<div class="head">
+				<img id="myImg" src="imgs/selfportraitsquircle.png" alt="Self portrait of me." height="100px" width="100px">
+				<h1 id="myName">Noah Gustafson</h1>
+			</div>
+			<h1 class="header">A gut-driven, creative starter focused on building immersive products that foster delightful experiences between everyday people and their tech.</h1>
+			<p class="text">I am working on two products: PareHealth&mdash;a subscription service for reusable medication bottles and CritSpace&mdash;a social media platform for UX designers to exchange feedback on their case studies.</p>
+			<!--<h2 class="header tools">⭐&nbsp;&nbsp;The Bouj</h2>
+			<p class="text" style="font-style:italic;">"Spend to invest in the best and not waste time on inefficiency. Create to build the best and not waste resources on unsustainability."<br>– My conscious self</p>-->
+			<!-- <a href="https://www.linkedin.com/in/negustaf/" class="linkedin">LinkedIn</a>
+			<a href="https://www.instagram.com/thelifeofnegus/" class="instagram">Instagram</a>
+			<a href="https://www.behance.net/thedesignofnegus" class="behance">Behance</a>
+			<a href="https://open.spotify.com/user/12140083189?si=nihkLLVKQlK-M3A6FV1tzg" class="spotify">Spotify</a>
+			<a href="mailto:negustaf@umich.edu" class="email">Email Me</a> -->
+			<h2 class="header tools">🔨&nbsp;&nbsp;My Toolkit</h2>
+			<p  class="subtext" style="margin-bottom:24px;">Software I regularly use and companies I actively support.</p>
+			<!-- DESKTOP VIEW -->
+			<div class="favorite-tools-desktop ftd1">
+				<a class="things3 favorite-column" href="https://culturedcode.com/things/" target="_blank"></a>
+				<a class="notion favorite-column" href="https://www.notion.so/" target="_blank"></a>
+				<a class="newton favorite-column" href="https://newtonhq.com" target="_blank"></a>
+				<a class="adobe favorite-column" href="https://adobe.com" target="_blank"></a>
+			</div>
+			<div class="favorite-tools-desktop">
+				<a class="trello favorite-column" href="https://trello.com" target="_blank"></a>
+				<a class="miro favorite-column" href="https://miro.com/" target="_blank"></a>
+				<a class="sketch favorite-column" href="https://www.sketch.com" target="_blank"></a>
+				<a class="figma favorite-column" href="https://www.figma.com" target="_blank"></a>
+			</div>
+			<!-- MOBILE VIEW -->
+			<div class="favorite-tools-mobile">
+				<div class="favorite-column">
+					<a class="things3" href="https://culturedcode.com/things/" target="_blank"></a>
+					<a class="notion" href="https://www.notion.so/" target="_blank"></a>
+				</div>
+				<div class="favorite-column">
+					<a class="newton favorite-column" href="https://newtonhq.com" target="_blank"></a>
+					<a class="adobe favorite-column" href="https://adobe.com" target="_blank"></a>
+				</div>
+				<div class="favorite-column">
+					<a class="trello favorite-column" href="https://trello.com" target="_blank"></a>
+					<a class="miro favorite-column" href="https://miro.com/" target="_blank"></a>
+				</div>
+				<div class="favorite-column">
+					<a class="sketch favorite-column" href="https://www.sketch.com" target="_blank"></a>
+					<a class="figma favorite-column" href="https://www.figma.com" target="_blank"></a>
+				</div>
+				<!-- <a href="" class=""><img id="" src="" alt="" height="" width="" style=""></a> -->
+			</div>
+		</main>
+		<footer>
+			<div style="padding:2em;"></div>
+			<!-- <hr style="color:gray;margin: 4em 0 1em 0;"> -->
+			<p class="text footer-line">I built this website with raw HTML, CSS, and JavaScript during the 2020 Covid-19 Quarantine Era.</p>
+			<!-- <p class="social-head">Social</p> -->
+			<div class="foot-social">
+				<a href="https://www.linkedin.com/in/negustaf/" target="_blank" class="social-linkedin">LinkedIn</a>
+				<a href="https://www.behance.net/thedesignofnegus" target="_blank" class="social-behance">Behance</a>
+				<a href="https://www.instagram.com/thelifeofnegus/" target="_blank" class="social-instagram">Instagram</a>
+				<a href="https://open.spotify.com/user/12140083189?si=nihkLLVKQlK-M3A6FV1tzg" target="_blank" class="social-spotify">Spotify</a>
+			</div>
+			<!-- <div class="foot">
+				<a class="foot-hover" href="http://paremed.com" style="text-decoration:none; line-height:22px;">created by noah gustafson
+					<br>
+					ANN ARBOR, MI
+					<br>
+					<img id="face" src="imgs/HipNoahSilhouette.png" alt="Hip sketch of me." height="22px" width="22px" style="vertical-align:middle; opacity:.5; padding-top:6px;">
+				</a>
+			</div> -->
+		</footer>
+	</div>
+	<script>
+		// SPLASH SCREEN
+		window.addEventListener("load", function () {
+			const loader = document.querySelector(".loader");
+			loader.className += " hidden";
+		});
+	</script>
+	</body>
+</html>
